@@ -1,0 +1,13 @@
+###
+GET http://localhost:3000/todos
+
+###
+GET http://localhost:3000/todos/628a8a9104811c1b565f4e5e
+
+###
+PUT http://localhost:3000/todos/628a8a9104811c1b565f4e5f
+Content-Type: application/json
+
+{
+  "text": "Learn about containers!"
+}
