@@ -1,0 +1,10 @@
+~/repos/fullstackopen-containers-part12$ docker container run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+125a6e411906: Pull complete 
+Digest: sha256:26c68657ccce2cb0a31b330cb0be2b5e108d467f641c62e13ab40cbec258c68d
+Status: Downloaded newer image for ubuntu:latest
+root@80edaab1d215:/# mkdir /usr/src/app
+root@80edaab1d215:/# touch /usr/src/app/index.js
+root@80edaab1d215:/# exit
+exit
