@@ -1,0 +1,16 @@
+docker container ls
+docker exec -it a47a643f08a9 bash
+
+docker exec -it a47a643f08a9 bash
+root@a47a643f08a9:/data# redis
+bash: redis: command not found
+root@a47a643f08a9:/data# which redis-cli
+/usr/local/bin/redis-cli
+root@a47a643f08a9:/data# redis-cli
+127.0.0.1:6379> KEYS *
+1) "added_todos"
+127.0.0.1:6379> GET added_todos
+"2"
+127.0.0.1:6379> SET added_todos 9001
+127.0.0.1:6379> DEL added_todos
+(integer) 1
