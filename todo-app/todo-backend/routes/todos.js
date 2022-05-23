@@ -19,7 +19,8 @@ router.get("/:id", async (req, res) => {
 router.put("/:id", async (req, res) => {
   const todo = await Todo.findById(req.params.id);
   todo.text = req.body.text;
-  todo.done = req.body.done ? req.body.done === "true" : todo.done;
+  todo.done = req.body.done !== undefined ? req.body.done : todo.done;
+  await todo.save();
   res.send(todo);
 });
 
